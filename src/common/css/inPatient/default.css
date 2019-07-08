@@ -1,0 +1,418 @@
+.ms-controller{visibility: hidden;}
+/*header样式 start*/
+.platform-header-place{
+    background: #3C93F1;
+    height: 60px;
+    width:100%;
+}
+.platform-header-place-left{
+    /* background: #2173CA; */
+    float: left;
+    width: 280px;
+    min-height: 60px;
+}
+.platform-header-place .platform-logo{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  line-height: 60px;
+  height: 100%;
+}
+.platform-header-place .platform-logo img{
+  float: left;
+  vertical-align: top;
+  margin: 12.5px 10px 0 9px;
+  width: 35px;
+  height: 35px;
+}
+/*header样式 end*/
+
+/*加载中 start*/
+.loading-data{
+    text-align: center;
+    color: rgba(200,200,200,1);
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    left: 50%;
+    background: none;
+    margin-left: -40px;
+    margin-top:-20px;
+    /* background: rgba(0, 0, 0, 0.16); */
+    top: 50%;
+    /* width: 100%; */
+}
+/*加载中 end*/
+
+/*数据提醒 start*/
+.blank-cont{
+    text-align: center;
+    padding: 100px 0px;
+}
+.health-score {
+    font-size: 24px;
+    text-align: center;
+    padding: 5px 10px;
+}
+.blank-cont [class^=nd]{
+    margin:  0 auto 10px auto;
+}
+.nd-report{
+    width: 200px;
+    height: 200px;
+    background: url(../../../common/images/default/nd-report.png) no-repeat center center;
+}
+.nd-patient{
+    width: 200px;
+    height: 200px;
+    background: url(../../../common/images/default/nd-patient.png) no-repeat center center;
+}
+.nd-departments{
+    width: 200px;
+    height: 200px;
+    background: url(../../../common/images/default/nd-departments.png) no-repeat center center;
+}
+.nd-matron{
+    width: 200px;
+    height: 200px;
+    background: url(../../../common/images/default/nd-matron.png) no-repeat center center;
+}
+/*数据提醒 end*/
+
+/*科室 start*/
+.header{
+    margin:-60px 250px 0px 280px;
+    z-index: 1000;
+    position: relative;
+    height:60px;
+}
+.header .hd-r{
+  margin-left: 280px;
+  height: 100%;
+}
+.header .hd-title{
+    position: relative;
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 60px;
+    font-size: 16px;
+    padding-right:10px;
+    cursor: pointer;
+    border-left: 1px solid rgb(37, 172, 255);
+    border-right: 1px solid rgb(37, 172, 255);
+}
+.header .hd-title>span.departName{
+    display: inline-block;padding:0px 15px 0px 20px;
+    color: #fff;float: left;
+    max-width: 120px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.header .departIcon{display: inline-block;float: right;}
+.header .hd-title .icon-angle-down{
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    background: url(../../../common/images/default/i-angle-white.png) no-repeat center center;
+}
+.header .hd-title.active{
+    background: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+.header .hd-title.active>span.departName{
+  color:#333333;
+}
+.header .hd-title.active .icon-angle-down{
+  background: url(../../../common/images/default/i-angle.png) no-repeat center center;
+  transform: rotate(180deg);
+}
+.header .header-pop {
+    display: none;
+    position: absolute;
+    z-index: 11;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    line-height: initial;
+    min-width: 100%;
+    top:60px;
+}
+.header .gastrlogy-body{
+  font-size:12px;
+}
+.header .gastrlogy-body a {
+  color: #4A4A4A;
+}
+.header .gastrlogy-body a:hover {
+  color: #3ED086;
+}
+.header .gastrlogy-body .hot {
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  position: relative;
+}
+.header .gastrlogy-body .hot .first {
+  font-size: 18px;
+  margin: 0 20px;
+}
+.header .gastrlogy-body .hot a {
+  margin: 0 20px;
+}
+.header .gastrlogy-body .hot .line {
+  color: #9AA5C2;
+}
+.header .gastrlogy-body .tags {
+  border-top: 1px solid #EDF0F5;
+  padding: 8px 20px;
+  position: relative;
+}
+.header .gastrlogy-body .tags.tagsnoborder{border: none;}
+.header .gastrlogy-body .tags > label {
+  color: rgb(165, 165, 165);
+  line-height: 24px;
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  left: 8px;
+}
+.header .gastrlogy-body .tags > div {
+  margin-left: 20px;
+  margin-right: -15px;
+}
+.header .gastrlogy-body .tags > div > a {
+    white-space: nowrap;
+    line-height: 24px;
+    margin-right: 15px;
+    display: inline-block;;
+}
+.header .gastrlogy-body .tags > div > a.curDep{color:#3ED086;cursor: text;}
+.header .gastrlogy-body .tags > div > a.active {
+  color: #3ED086;
+}
+
+/* --- */
+.gastrlogy-body-cont{
+  background: #fff;
+}
+.gastrlogy-body-cont .gastrlogy-body{
+  font-size:12px;
+}
+.gastrlogy-body-cont .gastrlogy-body a {
+  color: #4A4A4A;
+}
+.gastrlogy-body-cont .gastrlogy-body a:hover {
+  color: #3ED086;
+}
+.gastrlogy-body-cont .gastrlogy-body .hot {
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  position: relative;
+}
+.gastrlogy-body-cont .gastrlogy-body .hot .first {
+  font-size: 18px;
+  margin: 0 20px;
+}
+.gastrlogy-body-cont .gastrlogy-body .hot a {
+  margin: 0 20px;
+}
+.gastrlogy-body-cont .gastrlogy-body .hot .line {
+  color: #9AA5C2;
+}
+.gastrlogy-body-cont .gastrlogy-body .tags {
+  border-top: 1px solid #EDF0F5;
+  padding: 8px 20px;
+  position: relative;
+}
+.gastrlogy-body-cont .gastrlogy-body .tags.tagsnoborder{border: none;}
+.gastrlogy-body-cont .gastrlogy-body .tags > label {
+  color: rgb(165, 165, 165);
+  line-height: 24px;
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  left: 8px;
+}
+.gastrlogy-body-cont .gastrlogy-body .tags > div {
+  margin-left: 20px;
+  margin-right: -15px;
+}
+.gastrlogy-body-cont .gastrlogy-body .tags > div > a {
+    white-space: nowrap;
+    line-height: 24px;
+    margin-right: 15px;
+    display: inline-block;;
+}
+.gastrlogy-body-cont .gastrlogy-body .tags > div > a.curDep{color:#3ED086;cursor: text;}
+.gastrlogy-body-cont .gastrlogy-body .tags > div > a.active {
+  color: #3ED086;
+}
+/*科室 end*/
+
+/*tab start*/
+.header .hd-nav-control{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 30px;
+    max-width: 65%;
+    overflow: hidden;
+}
+.header .hd-nav-control .hd-nav{
+    width: 999999920px;
+    height: 30px;
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    float: left;
+    display: inline-block;
+    margin-top: 30px;
+}
+.header .hd-nav-control .hd-nav>li {
+    float: left;
+    background: #2173CA;
+}
+.header .hd-nav-control .hd-nav>li>a {
+    display: inline-block;
+    min-width: 72px;
+    height: 30px;
+    color: #fff;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 0 20px;
+    color: #fff;
+    padding: 0 10px;
+    border: 1px solid rgb(40, 173, 253);
+    border-bottom: none;
+    background: rgb(0, 158, 249);
+    position: relative;
+    border-bottom: none;
+    cursor: pointer;
+}
+.header .hd-nav-control .hd-nav>li>a:hover{
+  background: #14a9ff;
+  border-color: #41b7fd;
+}
+.header .hd-nav-control .hd-nav>li.active>a {
+    background-color: #F0F4F8;
+    color: #50ABF2;
+}
+.header .hd-nav-control .hd-nav>li>a .close {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 12px;
+    height: 12px;
+    background: url(../../../common/images/default/i-hd-window-close.png) no-repeat center center;
+    padding: 3px;
+    border-radius: 10px;
+}
+.header .hd-nav-control .hd-nav>li.active>a{
+    background: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    border-color: rgb(255, 255, 255);
+}
+.header .hd-nav-control .hd-nav>li.active>a .close {
+    background: url(../../../common/images/default/i-hd-window-close-active.png) no-repeat center center;
+}
+.header .hd-nav-control .hd-nav>li>a .close:hover{
+  background: #F4333C url(../../../common/images/default/i-hd-window-close.png) no-repeat center center;
+}
+.header .hd-nav-control .nav-pre,.header .hd-nav-control .nav-next{
+  display: none;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  line-height: 30px;
+  padding: 0 10px;
+  border: 1px solid #28ADFD;
+  border-bottom: none;
+  position: absolute;
+  bottom: 0px;
+  z-index: 4;
+  cursor: pointer;
+}
+.header .hd-nav-control .nav-pre{
+    left: 0;
+    background: #009EF9 url(../../../common/images/default/i-window-pre.png) no-repeat center center;
+}
+.header .hd-nav-control .nav-next{
+    right: -1px;
+    background: #009EF9 url(../../../common/images/default/i-window-next.png) no-repeat center center;
+}
+.header .hd-nav-control .nav-pre:hover,.header .hd-nav-control .nav-next:hover{
+  background-color: #28ADFD;
+}
+.header .hd-nav-control .nav-pre:active,.header .hd-nav-control .nav-next:active{
+  background-color: #41b7fd;
+}
+.header .hd-nav-control .nav-pre.disabled, .header .hd-nav-control .nav-pre.disabled:hover, .header .hd-nav-control .nav-pre.disabled:active{
+    /* background: #fff url(../../../common/images/default/tb-prv.png) no-repeat center center; */
+    cursor: default;
+    border: 1px solid transparent;
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+}
+.header .hd-nav-control .nav-next.disabled, .header .hd-nav-control .nav-next.disabled:hover, .header .hd-nav-control .nav-next.disabled:active{
+    /* background: #fff url(../../../common/images/default/tb-next.png) no-repeat center center; */
+    cursor: default;
+    border: 1px solid transparent;
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+}
+/*tab end*/
+
+.am-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-basis: auto;
+  box-sizing: border-box;
+  min-width: 0;
+}
+.am-container.is-vertical {
+  flex-direction: column;
+}
+.am-aside-flex0 {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.am-main {
+  display: block;
+  flex: 1;
+  flex-basis: auto;
+  overflow: auto;
+}
+
+.menu-patient li+li{
+  border-top: 1px solid #E5E5E5;
+}
+.menu-patient li{
+  position: relative;
+}
+.menu-patient li a {
+  display: block;
+  background: #F9F9F9;
+  padding: 10px 15px;
+  color: #333;
+}
+.menu-patient li a span {
+  display: inline-block;
+  min-width: 40px;
+  padding-right: 5px;
+}
+.menu-patient li a:hover {
+  background: rgba(0, 174, 88, .15)
+}
+.menu-patient li.active::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-left:2px solid #00ae58;
+}
+.menu-patient li.active a{
+  color: #00ae58;
+  background: rgba(0, 174, 88, .15)
+}

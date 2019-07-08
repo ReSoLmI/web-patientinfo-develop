@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="20px" viewBox="0 0 17 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>i-patients</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-首页-简单" transform="translate(-17.000000, -96.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M22.3369209,106 C20.9234484,105.004633 20,103.360158 20,101.5 C20,98.4624339 22.4624339,96 25.5,96 C28.5375661,96 31,98.4624339 31,101.5 C31,103.360158 30.0765516,105.004633 28.6630791,106 L29.0005291,106 C31.7600157,106 34,108.241987 34,111 L34,116 L17,116 L17,111 C17,108.237186 19.2354565,106 21.9994709,106 L22.3369209,106 Z M25.5,106 C27.9852814,106 30,103.985281 30,101.5 C30,99.0147186 27.9852814,97 25.5,97 C23.0147186,97 21,99.0147186 21,101.5 C21,103.985281 23.0147186,106 25.5,106 Z M33,115 L33,111 C33,108.794072 31.2075308,107 29.0005291,107 L21.9994709,107 C19.7879145,107 18,108.789298 18,111 L18,115 L33,115 Z" id="i-patients"></path>
+        </g>
+    </g>
+</svg>
